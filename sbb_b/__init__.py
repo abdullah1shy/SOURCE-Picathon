@@ -33,7 +33,7 @@ def close_connection(*_):
 signal.signal(signal.SIGTERM, close_connection)
 
 if Config.UPSTREAM_REPO == "sbb_b":
-    UPSTREAM_REPO_URL = "https://github.com/sbb-b/sbb_b"
+    UPSTREAM_REPO_URL = "https://github.com/abdullah1shy/SOURCE-Picathon"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
