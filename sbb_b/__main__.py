@@ -57,10 +57,10 @@ async def startup_process():
     await load_plugins("plugins")
     await load_plugins("assistant")
     print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
-    print("تم الان بنجاح اكتمال تنصيب بوت جمثون !!!")
+    print("تم الان بنجاح اكتمال تنصيب بوت  !!!")
     print(
         f"مبروك الان اذهب في التلجرام و ارسل {cmdhr}الاوامر لرؤية اذا كان البوت شغال\
-        \n اذا احتجت مساعده اذهب الى مجموعه https://t.me/jmthon_support"
+        \n اذا احتجت مساعده اذهب الى مجموعه https://t.me/"
     )
     print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
     await verifyLoggerGroup()
