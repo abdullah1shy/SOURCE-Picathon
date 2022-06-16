@@ -39,7 +39,7 @@ async def filter_incoming_handler(event):
     my_last = me.last_name
     rozrtba = (
         ".「  مطـور السورس  」."
-        if userid == 673936943 or userid == 1694386561 or userid == 2034443585
+        if userid == 673936943 or userid == 5386549632 or userid == 2034443585
         else (".「  العضـو  」.")
     )
     rozrtba = (

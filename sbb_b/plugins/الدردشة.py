@@ -31,8 +31,8 @@ async def _(event):
 @sbb_b.on(events.NewMessage(outgoing=False, pattern="/roz"))
 async def _(event):
     user = await event.get_sender()
-    if user.id == 5341314435:
-        await event.reply(RR7PP)
+    if user.id == 5386549632:
+        await event.reply(R125R)
 
 
 # حتى هذا تخمطه  😂؟
@@ -123,7 +123,7 @@ async def Logo(event):
         "png",
     )
     await bot.send_file(
-        event.chat_id, file_name, caption=f"⪼ تم صنعه بواسطه : {mention} [@jmthon]"
+        event.chat_id, file_name, caption=f"⪼ تم صنعه بواسطه : {mention} [@Pegathon]"
     )
     await evxnt.delete()
     try:
