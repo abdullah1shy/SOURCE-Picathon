@@ -14,7 +14,7 @@ from ..helpers.utils import reply_id
 from . import sbb_b, mention
 
 chr = Config.COMMAND_HAND_LER
-RR7PP = "اهلا بك محمد مطوري\nقناة السورس:  @jmthon"
+RR7PP = "اهلا بك عبدالله مطوري\nقناة السورس:  @Pegathon"
 PICS_STR = []
 
 from sbb_b import sbb_b
@@ -35,7 +35,7 @@ async def _(event):
         await event.reply(R125R)
 
 
-# حتى هذا تخمطه  😂؟
+# بيكاثون الأول 😔😇
 
 
 @sbb_b.ar_cmd(pattern="اتمنى ?(.*)")
