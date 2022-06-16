@@ -64,7 +64,7 @@ async def _(event):
 
 @sbb_b.ar_cmd(
     pattern="نتعرف$",
-    command=("دائره", plugin_category),
+    command=("نتعرف", plugin_category),
     info={
         "الامر": "**امر تسليه قم بالتجربه بنفسك**",
         "الاستخدام": "{tr}نتعرف",
@@ -118,12 +118,12 @@ async def _(event):
         "😧",
         "😡",
         "😢",
-        "‎**تنصيب جمثون**",
+        "‎**تنصيب بيكاثون **",
         "😁",
         "😧",
         "😡",
         "😢",
-        "__**[المطور....]**__(t.me/sbb_b)",
+        "__**[المطور....]**__(t.me/j64jj)",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
@@ -299,3 +299,41 @@ async def _(event):
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 18])
+
+
+@sbb_b.ar_cmd(
+    pattern="وخر$",
+    command=("وخر", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr}وخر",
+    },
+)
+async def _(event):
+    "animation command"
+    animation_interval = 0.3
+    animation_ttl = range(54)
+    event = await edit_or_reply(event, "🙂")
+    animation_chars = [
+        "شكو",
+        "شتريد",
+        "اهفك؟ ",
+        "مالي خلگ",
+        "وليي",
+        "يلا اترخص",
+        "رايح لا تسأل ليش",
+        "🙂",
+        "👍",
+        "🧍‍♂️",
+        "👨‍🦯",
+        "🏃",
+        "اممممم",
+        "يلا راجع",
+        "راح ارجع",
+        "هلو",
+        "باي",
+        "حنام",
+    ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i
