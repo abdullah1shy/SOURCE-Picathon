@@ -1,6 +1,9 @@
 import asyncio
 from collections import deque
 
+from . import edit_or_reply, sbb_b
+
+
 @sbb_b.ar_cmd(pattern="كومبي$") 
  async def _(event): 
      animation_interval = 0.8 
