@@ -356,21 +356,52 @@ async def _(event):
     "animation command"
     animation_interval = 1
     animation_ttl = range(12)
-    event = await edit_or_reply(event, "العد التنازلي....")
+    event = await edit_or_reply(event, "المنيوج.... ؟")
     animation_chars = [
         "فرخ",
         "منيوج",
         "بلاع",
         "قلاع",
         "تنح",
-        "👌",
-        "🥒",
+        "👌🍆",
+        "🍆.",
         "حطهة",
         "بطيزك",
-        "روح نيج 🥒😂",
+        "روح نيج 🍆😂",
         "هلعرضك 👌",
         "مخلعير",
         "كواد",
+    ]
+    for i in animation_ttl:
+        await asyncio.sleep(animation_interval)
+        await event.edit(animation_chars[i % 12])
+
+@sbb_b.ar_cmd(
+    pattern="همم$",
+    command=("همم", plugin_category),
+    info={
+        "الامر": "**امر تسليه قم بالتجربه بنفسك**",
+        "الاستخدام": "{tr} همم",
+    },
+)
+async def _(event):
+    "animation command"
+    animation_interval = 1
+    animation_ttl = range(12)
+    event = await edit_or_reply(event, "هممممم🤔")
+    animation_chars = [
+        "😒👎",
+        "👨‍🦯",
+        "🔎. ",
+        "منو",
+        "ليش",
+        "وين",
+        "شكو",
+        "شتردون",
+        "منو صاحني",
+        "راح ارجع",
+        "🏃",
+        "ممم",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
