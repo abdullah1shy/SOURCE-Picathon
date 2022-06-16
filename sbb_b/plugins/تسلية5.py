@@ -63,19 +63,19 @@ async def _(event):
 
 
 @sbb_b.ar_cmd(
-    pattern="دائره$",
+    pattern="نتعرف$",
     command=("دائره", plugin_category),
     info={
         "الامر": "**امر تسليه قم بالتجربه بنفسك**",
-        "الاستخدام": "{tr}دائره",
+        "الاستخدام": "{tr}نتعرف",
     },
 )
 async def _(event):
     "animation command"
     animation_interval = 0.3
     animation_ttl = range(20)
-    event = await edit_or_reply(event, "دائره...")
-    animation_chars = ["⚫", "⬤", "●", "∘", "‎"]
+    event = await edit_or_reply(event, "زحف.. ")
+    animation_chars = ["هلو 😇", "يحلو", "شسمك🤍", "نروح للسينما", "‎"]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 4])
