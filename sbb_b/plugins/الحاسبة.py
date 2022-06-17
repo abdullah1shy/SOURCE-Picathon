@@ -41,7 +41,7 @@ lst.append([Button.inline("=", data="calc=")])
 @sbb_b.ar_cmd(pattern="الحاسبة(?:\s|$)([\s\S]*)")
 async def icalc(e):
     if e.client._bot:
-        return await e.reply("**الحاسبة العلمية بيكاثون\n @Pegathon **", buttons=lst)
+        return await e.reply("**الحاسبة العلمية لسورس بيكاثون\n @R125R**", buttons=lst)
     results = await e.client.inline_query(Config.TG_BOT_USERNAME, "calc")
     await results[0].click(e.chat_id, silent=True, hide_via=True)
     await e.delete()
@@ -57,7 +57,7 @@ async def inlinecalc(event):
     ) and string == "calc":
         event.builder
         calc = event.builder.article(
-            "Calc", text="**الحاسبة العلمية لسورس بيكاثون @sbb_b**", buttons=lst
+            "Calc", text="**الحاسبة العلمية لسورس بيكاثون\n @**", buttons=lst
         )
         await event.answer([calc])
 
@@ -73,13 +73,13 @@ async def _(e):  # sourcery no-metrics
         if CALC.get(user):
             CALC.pop(user)
         await e.edit(
-            "**الحاسبة العلمية لسورس بيكاثون\n @Pegathon**",
+            "**الحاسبة العلمية لسورس جمثون\n @Pegathon**",
             buttons=[Button.inline("افتح مره اخرى", data="recalc")],
         )
     elif x == "C":
         if CALC.get(user):
             CALC.pop(user)
-        await e.answer(" ✅ تم الحذف")
+        await e.answer("تم الحذف")
     elif x == "⌫":
         if CALC.get(user):
             get = CALC[user]
