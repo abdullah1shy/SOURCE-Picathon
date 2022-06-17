@@ -189,7 +189,7 @@ async def _(event):
     await asyncio.sleep(0.4)
     await event.edit("روح للكروب دور على دايفل وعبيد بسرعهةةة")
 
-@sbb_b.ar_cmd(pattern="فارغ")
+@sbb_b.ar_cmd(pattern="فارغ$")
 async def _(event):
     event = await edit_or_reply(event, "يمعود")
     await event.edit("شبيك")
