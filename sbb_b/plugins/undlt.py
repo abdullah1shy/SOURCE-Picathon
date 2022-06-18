@@ -1,7 +1,7 @@
 import asyncio
 
 
-@sbb_b.on(admin_cmd(pattern="رسائلي الاخيره ?(.*)"))
+@sbb_b.on(admin_cmd(pattern="رسائلي الاخيره$")
 @sbb_b.on(sudo_cmd(pattern="رسائلي الاخيره ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
