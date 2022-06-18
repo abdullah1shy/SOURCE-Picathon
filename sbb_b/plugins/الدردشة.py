@@ -14,7 +14,7 @@ from ..helpers.utils import reply_id
 from . import sbb_b, mention
 
 chr = Config.COMMAND_HAND_LER
-RR7PP = "اهلا بك عبيد_مصطفئ مطوري\nقناة السورس:  @Pegathon"
+RR7PP = "اهلا بك مصطفى مطوري\nقناة السورس:  @Pegathon"
 PICS_STR = []
 
 from sbb_b import sbb_b
@@ -28,14 +28,14 @@ async def _(event):
     await event.reply(f"**❃ البوت الخاص بك هو** \n {TG_BOT_USERNAME}")
 
 
-@sbb_b.on(events.NewMessage(outgoing=False, pattern="/Mu"))
+@sbb_b.on(events.NewMessage(outgoing=False, pattern="/mus"))
 async def _(event):
     user = await event.get_sender()
     if user.id == 5386549632:
         await event.reply(R125R)
 
 
-# بيكاثون الأول 😔😇
+# حتى هذا تخمطه  😂؟
 
 
 @sbb_b.ar_cmd(pattern="اتمنى ?(.*)")
