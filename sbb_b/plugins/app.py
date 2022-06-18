@@ -3,11 +3,11 @@
 import bs4
 import requests
 
-from userbot import bot
+from sbb_b import sbb_b
 Name = bot.me.first_name
 
-@icss.on(icss_cmd(pattern="برنامج (.*)"))
-@icss.on(sudo_cmd(pattern="برنامج (.*)", allow_sudo=True))
+@sbb_b.on(sbb_b_cmd(pattern="برنامج (.*)"))
+@sbb_b.on(sudo_cmd(pattern="برنامج (.*)", allow_sudo=True))
 async def apk(event):
     app_name = event.pattern_match.group(1)
     event = await eor(event, "**⌔∮ ججاري البحث عـن التطبيق**")
