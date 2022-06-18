@@ -23,11 +23,11 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         result = None
         query = event.text
         await bot.get_me()
-        if query.startswith("سورس") and event.query.user_id == bot.uid:
+        if query.startswith("السورس$") and event.query.user_id == bot.uid:
             buttons = [
                 [
-                    Button.url("قنـاة السـورس ⚙️", "https://t.me/Pegathon"),
-                    Button.url("المطـور 👨🏼‍💻", "https://t.me/Pegathon"),
+                    Button.url("قنـاة السـورس ⚙️", "t.me/PeyGathon"),
+                    Button.url("المطـور 👨🏼‍💻", "t.me/pegthon"),
                 ]
             ]
             if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
@@ -52,7 +52,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
             await event.answer([result] if result else None)
 
 
-@sbb_b.ar_cmd(pattern="سورس")
+@sbb_b.ar_cmd(pattern="السورس")
 async def repo(event):
     RR7PP = Config.TG_BOT_USERNAME
     if event.reply_to_msg_id:
