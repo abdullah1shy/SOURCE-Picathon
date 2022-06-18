@@ -1,8 +1,3 @@
-"""
-By  : @Dragon_2022_D ( https://t.me/Dragon_2022_D  )
-Edit: @T2R_9 ( https://t.me/T2R_9  )
-"""
-
 import asyncio
 import base64
 import os
