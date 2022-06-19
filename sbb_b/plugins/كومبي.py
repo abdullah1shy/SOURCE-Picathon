@@ -37,7 +37,7 @@ def convert(seconds):
 async def td(event):
     return await edit_or_reply(event, str(t))
 
-@jmthon.ar_cmd(pattern="توب الفلوس(.*)")
+@jmthon.ar_cmd(pattern="توب الفلوس?([\s\S]*)")
    
 async def d(message):
     users = des_bank()
@@ -52,7 +52,7 @@ async def d(message):
     await edit_or_reply(message, list)
     #return await edit_or_reply(message, str(des_bank()))
 
-@jmthon.ar_cmd(pattern="مسح حسابي(.*)")
+@jmthon.ar_cmd(pattern="مسح حسابي?([\s\S]*)")
    
 async def d(message):
     me = await message.client.get_me()
@@ -65,7 +65,7 @@ async def d(message):
         await message.client.send_message(message.chat_id, "تم حذف حسابك المصرفي")
 
 @jmthon.ar_cmd(
-    pattern="البنك(?:\s|$)([\s\S]*)",
+    pattern="البنك?([\s\S]*)")",
     command=("البنك", plugin_category),
 )
 async def start(event):
@@ -89,7 +89,7 @@ async def start(event):
 
 
 
-@jmthon.on(admin_cmd(pattern="(فلوسي|اموالي) ?(.*)"))
+@jmthon.on(admin_cmd(pattern="(فلوسي|اموالي) ?([\s\S]*)"))
 async def a(message):
     me = await message.client.get_me()
     if get_bank(me.id) is None:
@@ -101,7 +101,7 @@ async def a(message):
 
 
 
-@jmthon.on(admin_cmd(pattern="(بنكي|مصرفي) ?(.*)"))
+@jmthon.on(admin_cmd(pattern="(بنكي|مصرفي) ?([\s\S]*)"))
 async def myb(message):
 
     me = await message.client.get_me()
@@ -125,7 +125,7 @@ async def myb(message):
          ca = await edit_or_reply(message,f"<strong>ليس لديك حساب في البنك!</strong>",parse_mode="html")
 
 
-@jmthon.ar_cmd(func=lambda m:"راتب")
+@jmthon.ar_cmd(func=lambda m:"راتب?([\s\S]*)"")
 async def ga(message):
     mee = await message.client.get_me()
     ms = message.text
@@ -157,7 +157,7 @@ async def ga(message):
         hr = await edit_or_reply(message,f"<strong>{help}</strong>",parse_mode="html")
 
 
-    if ms == ".كنز":
+    if ms == "$كنز":
         if "كنز" in t:
               tii = t["كنز"] - time.time()
               return await edit_or_reply(message,"<strong> ليس هنالك كنز لقد اخذته بالفعل انتضر {}</strong>".format(convert(tii)),parse_mode="html")
@@ -173,7 +173,7 @@ async def ga(message):
               del t["كنز"]
      
     if ".استثمار" in ms:
-        value = message.text.replace(".استثمار","")
+        value = message.text.replace("$استثمار","")
         if "استثمار" in t:
             ti2 = t["استثمار"] - time.time()
             return await edit_or_reply(message,"<strong> للاستثمار مجدداً انتضر {}</strong>".format(convert(ti2)),parse_mode="html")
@@ -208,7 +208,7 @@ async def ga(message):
              del t["استثمار"]
              
 
-    if f".حظ"in message.text:
+    if f"$حظ"in message.text:
         value = message.text.replace(".حظ","")
         ppe = acc.balance
         if "حظ" in t:
@@ -248,7 +248,7 @@ async def ga(message):
             t["حظ"] = time.time() + 600
             await asyncio.sleep(600)
             del t["حظ"]
-    if ms == ".بخشيش":
+    if ms == "$بخشيش":
         ppe = acc.balance
         if "بخشيش" in t:
             ti2 = t["بخشيش"] - time.time()
@@ -284,7 +284,7 @@ async def ga(message):
               del t["راتب"]
 
 @jmthon.ar_cmd(
-    pattern="اسرق(?:\s|$)([\s\S]*)",
+    pattern="اسرق?([\s\S]*)",
     command=("اسرق", plugin_category),
 )
 async def thief(message):
@@ -322,7 +322,7 @@ async def thief(message):
     del t["اسرق"]
     
     
-@jmthon.ar_cmd(pattern="انشاء حساب (.*)")
+@jmthon.ar_cmd(pattern="انشاء حساب ?([\s\S]*)"")
 async def bankar(message):
     input = message.pattern_match.group(1)
     mee = await message.client.get_me()
@@ -338,7 +338,7 @@ async def bankar(message):
     cbs = await edit_or_reply(message,f"<strong>تم انشاء حساب مصرفي بالمعلومات التالية:\nاسم صاحب الحساب:{mee.first_name}|\nايدي الحساب:{mee.id}|\nاسم المصرف:{bankn}|\nالاموال المودعة:50$</strong>", parse_mode="html")
 
 
-@jmthon.ar_cmd(pattern="تحويل (.*)")
+@jmthon.ar_cmd(pattern="تحويل ?([\s\S]*)"")
 
 async def transmoney(event):
     me = await event.client.get_me()
