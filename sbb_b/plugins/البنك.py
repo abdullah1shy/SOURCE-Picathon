@@ -15,7 +15,7 @@ PING_PIC = os.environ.get("PING_PIC") or (
     "https://telegra.ph/file/0232addc09f30daba0eb4.mp4"
 )
 
-JM_TXT = os.environ.get("PING_TEXT") or "مـن لا يتعلم من الماضي لا يرحمه المستقبل  . 🖤"
+JM_TXT = os.environ.get("PING_TEXT") or " تذكر بأن الأيام الصعبة التي تمر بها ستصنع منك شخصاً قوياً ،،، لا ينكسر . . 🖤"
 
 
 @sbb_b.ar_cmd(pattern="بنك$")
@@ -29,7 +29,7 @@ async def _(event):
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>\n<code>✲✲✲✲✲✲✲✲✲✲✲✲\n┃ ✦ {ms}\n┃ ✦ <b>{hmention}</b>\n✲✲✲✲✲✲✲✲✲✲✲✲✲✲✲✲✲"
+        caption = f"<b><i>{JM_TXT}<i><b>\n<code>_____________𝘂𝘀𝗲𝗿 𝗕𝗼𝘁____________\n┃ ✦ {ms}\n┃ ✦ <b>{hmention}</b>\n______________𝗣𝗲𝗚𝗮𝘁𝗵𝗼𝗻___________"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
