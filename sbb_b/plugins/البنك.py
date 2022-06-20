@@ -12,7 +12,7 @@ from sbb_b import sbb_b
 from . import hmention, reply_id
 
 PING_PIC = os.environ.get("PING_PIC") or (
-    "https://telegra.ph/file/60c1e31e032cb2543b54d.jpg "
+    "https://telegra.ph/file/60c1e31e032cb2543b54d.jpg"
 )
 
 JM_TXT = os.environ.get("PING_TEXT") or " تذكر بأن الأيام الصعبة التي تمر بها ستصنع منك شخصاً قوياً ،،، لا ينكسر . . 🖤"
