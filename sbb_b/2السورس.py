@@ -1,3 +1,4 @@
+#by Abdullah salhy
 import os
 from datetime import datetime
 
@@ -6,14 +7,14 @@ from sbb_b import sbb_b
 #
 from . import hmention, reply_id
 
-PING_PIC = os.environ.get("PING_PIC") or (
-    "https://telegra.ph/file/60c1e31e032cb2543b54d.jpg"
+surce_TEXT = os.environ.get("surce_TEXT") or (
+    "https://telegra.ph/file/35ed418f21911e5cbb9bc.mp4"
 )
 
-JM_TXT = os.environ.get("surce_TEXT") or " تذكر بأن الأيام الصعبة التي تمر بها ستصنع منك شخصاً قوياً ،،، لا ينكسر . . 🖤"
+Py_TXT = os.environ.get("surce_TEXT") or "  .𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗣𝗘𝗚𝗧𝗛𝗢𝗡 𝗔𝗿𝗮𝗯𝗶𝗰 . 🖤"
 
 
-@sbb_b.ar_cmd(pattern="السورس$")
+@j64jj.ar_cmd(pattern="السورس$")
 async def _(event):
     reply_to_id = await reply_id(event)
     start = datetime.now()
@@ -36,5 +37,5 @@ async def _(event):
         )
     else:
         await event.edit_or_reply(
-            event, "<code>يجـب اضـافة متـغير `PING_PIC`  اولا  f<code>", "html"
+            event, "<code>يجـب اضـافة متـغير `surce_TEXT`  اولا  f<code>", "html"
         )
