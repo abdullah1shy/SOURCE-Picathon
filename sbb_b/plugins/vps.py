@@ -16,7 +16,7 @@ cmds = [
 # ========================================================================
 
 
-@sbb_b.ar_cmd(pattern="(ري|رست)لود$")
+@sbb_b.ar_cmd(pattern="(تحديث$")
 async def _(event):
     cmd = event.pattern_match.group(1)
     sbb_b = await edit_or_reply(event, "**⌔∮ انتظر من 2-3 دقائق**")
