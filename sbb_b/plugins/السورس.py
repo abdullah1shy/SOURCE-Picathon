@@ -4,12 +4,12 @@ from sbb_b import sbb_b
 from . import *
 from ..Config import Config
 
-ROZ_PIC = "https://telegra.ph/file/6b455bfa6d26e0ca15c82.jpg"
+ROZ_PIC = "https://telegra.ph/file/e18992dd6abdce2cf62f9.jpg"
 RAZAN = Config.TG_BOT_USERNAME
 ROZ_T = (
     f"**⌯︙بوت  يعمل بنجاح 🤍،**\n"
     f"**   - اصدار التليثون :** `1.23.0\n`"
-    f"**   - اصدار بيكاثون :** `4.0.0`\n"
+    f"**   - اصدار بيكاثون :** `4.2.0`\n"
     f"**   - البوت المستخدم :** `{RAZAN}`\n"
     f"**   - اصدار البايثون :** `3.9.6\n`"
     f"**   - المستخدم :** {mention}\n"
