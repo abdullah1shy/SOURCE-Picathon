@@ -248,3 +248,21 @@ async def _(event):
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 32])
+
+
+@sbb_b.ar_cmd(
+    pattern="تعال$",
+    command=("قمر", plugin_category),
+    info={
+        "الامر": "امر تسليه جربه بنفسك",
+        "الاستخدام": "{tr}تعال",
+    },
+)
+async def _(event):
+    "animation command"
+    event = await edit_or_reply(event, "تعال")
+    deq = deque(list("↩️\t🧸\t💥\t💬\t🎄"))
+    for _ in range(48):
+        await asyncio.sleep(0.2)
+        await event.edit("".join(deq))
+        deq.rotate(1)
