@@ -18,7 +18,7 @@ LOGS = logging.getLogger(__name__)
 
 
 @sbb_b.ar_cmd(
-    pattern="اعادة تشغيل$",
+    pattern="تحديث$",
     disable_errors=True,
 )
 async def _(event):
