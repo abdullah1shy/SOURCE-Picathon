@@ -26,8 +26,8 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         if query.startswith("السورس$") and event.query.user_id == bot.uid:
             buttons = [
                 [
-                    Button.url("قنـاة السـورس ⚙️", "t.me/PeyGathon"),
-                    Button.url("المطـور 👨🏼‍💻", "t.me/pegthon"),
+                    Button.url("قنـاة السـورس ⚙️", "t.me/PeyGatho"),
+                    Button.url("المطـور 👨🏼‍💻", "t.me/pegatho"),
                 ]
             ]
             if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
