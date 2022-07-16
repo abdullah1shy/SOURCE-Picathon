@@ -76,7 +76,7 @@ async def startupmessage():
                 "https://telegra.ph/file/420c2425f9bfbadbe0a3f.jpg",
                 caption="❃ عزيزي المستخدم تم تنصيب سورس بيكاثون لك بنجاح لمعرفه اوامر السورس؛ \n`.الاوامر`",
                 buttons=[
-                    (Button.url("مجموعة المساعده", "https://t.me/Pegathon"),)
+                    (Button.url("مجموعة المساعده", "https://t.me/TEPP2"),)
                 ],
             )
     except Exception as e:
