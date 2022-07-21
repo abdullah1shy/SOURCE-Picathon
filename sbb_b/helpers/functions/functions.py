@@ -112,4 +112,4 @@ def Build_Poll(options):
 
 def deEmojify(inputString: str) -> str:
     """Remove emojis and other non-safe characters from string"""
-    return re.sub(SOURCE-Picathon, "", inputString
+    return re.sub(Picathon_PATTERN, "", inputString
