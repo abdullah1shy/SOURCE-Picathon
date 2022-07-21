@@ -4,7 +4,7 @@ from datetime import datetime
 import re
 from telethon.tl.types import Channel, PollAnswer
 
-JMTHON_PATTERN = re.compile(
+Picathon_PATTERN = re.compile(
     "["
     "\U0001F1E0-\U0001F1FF"  # flags (iOS)
     "\U0001F300-\U0001F5FF"  # symbols & pictographs
